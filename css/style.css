@@ -1,0 +1,102 @@
+/* NOT: 1rem = 16px 'dir. */
+
+/* Genel kodların bulunduğu bölümün başlangıcı */
+
+/* Değişken tanımlamalarının yapıldığı bölüm */
+:root {
+  --main-color: #d90429; /* Navbar ve navbarın tüm alt bloklarının background rengi. */
+  --support-color: #ff98aa; /* Sayfadaki ikincil(yardımcı) renk. */
+  --body-color: #bebebe; /* Sayfanın genel background rengi. */
+  --color-white: #ffffff; /* Sayfadaki tüm beyaz kısımlar. */
+  --word-color-one: #4b4f5d; /* Sayfanın 1. yazı rengi. */
+  --word-color-two: #6a738b; /* Sayfanın 2. yazı rengi. */
+  --component-color: #bfc7d1; /* Sayfadaki componentlerin background rengi. */
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+.card {
+  min-height: 12rem;
+  margin-top: 10px;
+}
+
+.heading {
+  color: var(--word-color-one);
+  border-bottom: 0.1rem solid var(--support-color);
+}
+
+/* Genel kodların bulunduğu bölümün sonu */
+
+/* Navbar ile ilgili kodların bulunduğu bölümün başlangıcı */
+
+.navbar {
+  background-color: var(--main-color);
+}
+
+.navbarWord {
+  color: var(--color-white);
+}
+
+.navbar-toggler-icon {
+  color: var(--color-white);
+}
+
+button svg {
+  width: 30px;
+  height: 30px;
+}
+
+.dropdownMenu {
+  background-color: var(--support-color);
+}
+
+/* Navbar ile ilgili kodların bulunduğu bölümün sonu */
+
+/* içerik ile ilgili kodların bulunduğu bölümün başlangıcı */
+
+/* Card yapısı ile ilgili kodların bulunduğu bölümün başlangıcı */
+
+.imageZoom {
+  height: 160px;
+  background-size: 120%;
+  background-position: center;
+  transition: all 10s ease-in;
+}
+
+.imageZoom:hover {
+  background-size: cover;
+}
+
+/* Card yapısı ile ilgili kodların bulunduğu bölümün başlangıcı */
+
+/* Carousel ile ilgili kodların bulunduğu bölüm */
+.carouselBase {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.carousel-inner > .carousel-item > img {
+  border-radius: 6px;
+}
+
+.carouselİmage {
+  height: 400px;
+}
+
+/* Carousel ile ilgili kodların bulunduğu bölüm */
+
+/* içerik ile ilgili kodların bulunduğu bölümün sonu */
+
+/* Footer ile ilgili kodların bulunduğu bölümün başlangıcı */
+
+.footerBorderTop {
+  border-top: 0.1rem solid var(--support-color);
+}
+
+.iconSize {
+  font-size: 20px;
+}
+
+/* Footer ile ilgili kodların bulunduğu bölümün sonu */
