@@ -6,7 +6,7 @@
 :root {
   --main-color: #d90429; /* Navbar ve navbarın tüm alt bloklarının background rengi. */
   --support-color: #ff98aa; /* Sayfadaki ikincil(yardımcı) renk. */
-  --body-color: #bebebe; /* Sayfanın genel background rengi. */
+  --body-color: #dedddd; /* Sayfanın genel background rengi. */
   --color-white: #ffffff; /* Sayfadaki tüm beyaz kısımlar. */
   --word-color-one: #4b4f5d; /* Sayfanın 1. yazı rengi. */
   --word-color-two: #6a738b; /* Sayfanın 2. yazı rengi. */
@@ -15,16 +15,39 @@
 
 body {
   background-color: var(--body-color);
+  font-family: 'Lora', serif;
 }
 
 .card {
   min-height: 12rem;
   margin-top: 10px;
+  overflow: hidden;
 }
 
 .heading {
   color: var(--word-color-one);
   border-bottom: 0.1rem solid var(--support-color);
+}
+
+.whatsapp {
+  z-index: 1;
+  position: fixed;
+  right: 112px;
+  bottom: 45px;
+  width: 100px;
+  height: 55px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: var(--main-color);
+}
+
+.whatsapp:hover {
+  color: #000000;
 }
 
 /* Genel kodların bulunduğu bölümün sonu */
@@ -48,10 +71,6 @@ button svg {
   height: 30px;
 }
 
-.dropdownMenu {
-  background-color: var(--support-color);
-}
-
 /* Navbar ile ilgili kodların bulunduğu bölümün sonu */
 
 /* içerik ile ilgili kodların bulunduğu bölümün başlangıcı */
@@ -60,19 +79,25 @@ button svg {
 
 .imageZoom {
   height: 160px;
-  background-size: 120%;
+  background-size: 100%;
   background-position: center;
-  transition: all 10s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .imageZoom:hover {
-  background-size: cover;
+  transform: translateY(-8px) scale(1.1);
+}
+
+.imageZoomBig {
+  height: 300px;
+  background-size: 100%;
 }
 
 /* Card yapısı ile ilgili kodların bulunduğu bölümün başlangıcı */
 
 /* Carousel ile ilgili kodların bulunduğu bölüm */
 .carouselBase {
+  margin-top: 4.1rem;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -87,6 +112,18 @@ button svg {
 
 /* Carousel ile ilgili kodların bulunduğu bölüm */
 
+/* Who We Are ile ilgili kodların bulunduğu bölüm */
+.whoWeAreTitle {
+  text-align: justify;
+}
+/* Who We Are ile ilgili kodların bulunduğu bölüm */
+
+/* Contact Us ile ilgili kodların bulunduğu bölüm */
+.contactPadding {
+  padding-bottom: 10.2px;
+}
+/* Contact Us ile ilgili kodların bulunduğu bölüm */
+
 /* içerik ile ilgili kodların bulunduğu bölümün sonu */
 
 /* Footer ile ilgili kodların bulunduğu bölümün başlangıcı */
@@ -95,8 +132,52 @@ button svg {
   border-top: 0.1rem solid var(--support-color);
 }
 
-.iconSize {
+.iconProperties {
   font-size: 20px;
+}
+.iconProperties:hover {
+  color: var(--support-color);
 }
 
 /* Footer ile ilgili kodların bulunduğu bölümün sonu */
+
+/* @Media etiketlerinin bulunduğu bölümün başlangıcı */
+@media (max-width: 900px) {
+  .whatsapp {
+    z-index: 1;
+    position: fixed;
+    right: 60px;
+    bottom: 45px;
+    width: 100px;
+    height: 55px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: var(--main-color);
+  }
+}
+
+@media (max-width: 450px) {
+  .whatsapp {
+    z-index: 1;
+    position: fixed;
+    right: 12px;
+    bottom: 45px;
+    width: 100px;
+    height: 55px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: var(--main-color);
+  }
+}
+
+/* @Media etiketlerinin bulunduğu bölümün sonu */
